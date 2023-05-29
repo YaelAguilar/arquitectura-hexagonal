@@ -4,6 +4,7 @@ dotEnvConfig();
 import bodyParser from "body-parser";
 import express from "express";
 
+import { carRouter } from "./Car/infrastructure/routes/carRoutes";
 import { config } from "./config";
 import { fruitRouter } from "./Fruit/infrastructure/routes/fruitRoutes";
 import { healthRouter } from "./health/health-router";
@@ -16,6 +17,7 @@ function boostrap() {
   app.use("/health", healthRouter);
   app.use("/users", userRouter);
   app.use("/fruits", fruitRouter);
+  app.use("/cars", carRouter);
 
   const { port } = config.server;
 
