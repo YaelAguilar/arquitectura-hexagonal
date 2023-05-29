@@ -8,7 +8,7 @@ export class ViewPrice {
         if (!fruit) {
           throw new Error(`User id not found ${fruitId}`);
         }
-        console.log("La fruta ", fruit.fruta,"tiene un precio de ",fruit.preciou ," la unidad.");
+        console.log("La fruta ", fruit.fruta,"tiene un precio de ",fruit.preciou ," la unidad");
       }
 
 }
